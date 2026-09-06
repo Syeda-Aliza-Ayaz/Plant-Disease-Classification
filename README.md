@@ -11,8 +11,7 @@ To find out, I trained three models on the same data and compared not just their
 - Trained a **CNN from scratch**, fine-tuned a **pretrained ResNet-18**, and ran a **data-augmentation ablation** — all on a balanced 10-class subset of PlantVillage (tomato, corn, grape, potato).
 - Transfer learning jumped accuracy from **91.0% → 97.8%**. Augmentation added only ~1 point, and mostly just reduced overfitting.
 - **The interesting bit:** tomato early blight vs. late blight stayed the hardest pair in *every* model — the lowest F1 scores across the board, even after transfer learning cleaned up almost everything else. That points to the two diseases genuinely looking alike, not the model being weak.
-- Full write-up in [`preprint/Plant_Disease_Classification.pdf`](preprint/Plant_Disease_Classification.pdf).
-
+- Full write-up coming soon.
 ---
 
 ## Why I built this
@@ -25,8 +24,6 @@ I grow plants, and one summer I was raising about ten tomato plants. One of them
 
 ```
 ├── Plant_Disease_Diagnosis.ipynb   # the full notebook (data → training → evaluation)
-├── preprint/
-│   ├── Plant_Disease_Classification.pdf                # the paper
 ├── figures/                        # learning curves + confusion matrices
 ├── requirements.txt
 └── README.md
@@ -89,4 +86,4 @@ This is a scoped study, not a production system. It uses a subset rather than th
 
 **Syeda Aliza Ayaz** — syedaalizaayaz.1606@gmail.com
 
-Full methodology and analysis in the [preprint](preprint/Plant_Disease_Classification.pdf).
+Full methodology and analysis coming soon.
